@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.Vector;
 
 public class Main {
@@ -10,14 +11,16 @@ public class Main {
         Student stu3 = new Student("Phil", 3.64);
         Student stu4 = new Student("Steve", 2.894);
         Student stu5 = new Student("Todd", 4.325);
+        Student stu6 = new Student("Derek", 5.18);
 
-    Vector<Student> Students = new Vector<>();
+    ArrayList<Student> Students = new ArrayList();
         Students.add(stu1);
         Students.add(stu2);
         Students.add(stu3);
         Students.add(stu4);
         Students.add(stu5);
-    Vector<Student> topThree = new Vector<>();
+        Students.add(stu6);
+    ArrayList<Student> topThree = new ArrayList();
 
         for (int i = 0; i < 3; i++) {
         double highestGPA = 0.0;
